@@ -9,7 +9,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: #000;
     transition: all 1.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -39,14 +39,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #434242;
+    background: #c7c1c1;
     list-style: none;
     transform: translated(0, 100, 0);
     transition: all 1.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #504f4f;
+    background: #d3cece;
     transform: translate3d(0, 100%, 0);
     transition: all 1.5s ease-out; }
     .menu-branding.show {
@@ -56,14 +56,14 @@
       height: 250px;
       background: url("../img/portrait.jpg");
       border-radius: 50%;
-      border: solid 3px #8e8ff1; }
+      border: solid 3px #3537cc; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 1.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #8e8ff1; }
+      color: #3537cc; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -71,11 +71,11 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: #fff;
+    color: #000;
     text-decoration: none;
     transition: all 1.5s ease-out; }
     .menu .nav-link:hover {
-      color: #8e8ff1; }
+      color: #3537cc; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -120,8 +120,8 @@
   box-sizing: border-box; }
 
 body {
-  background: #504f4f;
-  color: #fff;
+  background: #d3cece;
+  color: #000;
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -138,7 +138,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(80, 79, 79, 0.5); }
+      background: rgba(211, 206, 206, 0.5); }
     body#bg-img .overlay {
       position: absolute;
       top: 0;
@@ -146,7 +146,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(80, 79, 79, 0.5); }
+      background: rgba(211, 206, 206, 0.5); }
 
 h1,
 h2,
@@ -162,7 +162,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(85, 84, 84, 0.5); }
+    background: rgba(216, 211, 211, 0.5); }
 
 a {
   color: #fff;
@@ -174,17 +174,17 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #8e8ff1; }
+  color: #3537cc; }
 
 main {
   padding: 4rem;
-  height: 100%; }
+  min-height: calc(100vh-60px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #8e8ff1;
+        color: #3537cc;
         transition: all 1.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -212,3 +212,25 @@ main {
       opacity: 0; }
     .menu-btn.close .btn-line:nth-child(3) {
       transform: rotate(-45deg) translate(7px, -6px); }
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "bioimage bio bio";
+  grid-template-columns: repeat(2, 1fr); }
+
+.bio-image {
+  grid-area: bioimage;
+  margin: auto;
+  border-radius: 50%;
+  border: #3537cc 3px solid; }
+
+.bio {
+  grid-area: bio;
+  font-size: 1.5rem; }
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #bbb3b3;
+  color: #000; }

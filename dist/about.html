@@ -12,10 +12,10 @@
     />
 
     <link rel="stylesheet" href="dist/css/main.css" />
-    <title>Welcome to my Portfolio</title>
+    <title>About Me</title>
   </head>
 
-  <body id="bg-img">
+  <body>
     <div class="overlay"></div>
     <header>
       <div class="menu-btn">
@@ -28,10 +28,8 @@
         <div class="menu-branding"></div>
         <div class="portrait"></div>
         <ul class="menu-nav">
+          <li class="nav-item "><a href="/" class="nav-link"> Home </a></li>
           <li class="nav-item current">
-            <a href="/" class="nav-link"> Home </a>
-          </li>
-          <li class="nav-item">
             <a href="about.html" class="nav-link"> About Me</a>
           </li>
           <li class="nav-item">
@@ -44,18 +42,21 @@
       </nav>
     </header>
 
-    <main id="home">
-      <h1 class="lg-heading">
-        Andre <span class="text-secondary"> Cleary </span>
-      </h1>
+    <main id="about">
+      <h1 class="lg-heading">About <span class="text-secondary"> Me </span></h1>
 
-      <h2 class="sm-heading">Web Developer and Programmer</h2>
+      <h2 class="sm-heading">Let me tell you a few things...</h2>
+      <div class="about-info">
+        <img src="img/portrait.jpg" alt="Andre Cleary" class="bio-image" />
 
-      <div class="icons">
-        <a href="#!"> <i class="fab fa-linkedin fa-2x"></i> </a>
-        <a href="#!"> <i class="fab fa-github fa-2x"></i> </a>
+        <div class="bio">
+          <h3 class="text-secondary">BIO</h3>
+          <p>Bio should be written here.</p>
+        </div>
       </div>
     </main>
+
+    <footer id="main-footer">Copyright &copy; 2019</footer>
 
     <script
       type="text/javascript"
