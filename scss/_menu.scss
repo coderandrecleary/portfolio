@@ -45,7 +45,8 @@
 .menu {
   position: fixed;
   top: 0;
-  width: 100;
+  width: 100%;
+  opacity: 0.9;
   visibility: hidden;
 
   &.show {
@@ -55,7 +56,7 @@
   &-branding,
   &-nav {
     display: flex;
-    flex-flow: column;
+    flex-flow: column wrap;
     align-items: center;
     justify-content: center;
     float: left;
@@ -69,7 +70,7 @@
     padding: 0;
     background: darken($primary-color, 5);
     list-style: none;
-    transform: translated(0, 100, 0);
+    transform: translated3d(0, -100%, 0);
     @include easeOut;
 
     &.show {
@@ -78,6 +79,7 @@
     }
   }
 
+  //Branding Side
   &-branding {
     background: $primary-color;
     transform: translate3d(0, 100%, 0);
@@ -89,9 +91,9 @@
     }
 
     .portrait {
-      width: 250px;
+      width: 500px;
       height: 250px;
-      background: url("../img/portrait.jpg");
+      background: url(../img/portrait.jpg);
       border-radius: 50%;
       border: solid 3px $secondary-color;
     }
