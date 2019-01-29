@@ -53,9 +53,9 @@
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
-      width: 500px;
+      width: 250px;
       height: 250px;
-      background: url(../img/portrait.jpg);
+      background: url("../img/rp3.jpg");
       border-radius: 50%;
       border: solid 3px #3537cc; }
   .menu .nav-item {
@@ -203,6 +203,11 @@ main {
   grid-area: bio;
   font-size: 1.5rem; }
 
+.job {
+  background: #dfdbdb;
+  padding: 0.5rem;
+  border-bottom: #3537cc 5px solid; }
+
 .projects {
   display: grid;
   grid-gap: 0.7rem;
@@ -236,6 +241,7 @@ main {
 
 .btn, .btn-dark, .btn-light {
   display: block;
+  text-align: center;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem; }
@@ -248,12 +254,12 @@ main {
   color: #fff; }
 
 .btn-light {
-  background: #554d4d;
-  color: #333; }
+  background: white;
+  color: #0a0a0a; }
 
 #main-footer {
   text-align: center;
-  padding: 1rem;
+  padding: 0.3rem;
   background: #bbb3b3;
   color: #000; }
 
@@ -293,7 +299,7 @@ main {
       height: 150px; }
   .about-info {
     grid-template-areas: "bioimage" "bio";
-    grid-template-areas: 1fr; } }
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
