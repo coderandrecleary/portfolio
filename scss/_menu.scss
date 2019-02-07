@@ -1,6 +1,6 @@
-@mixin easeOut {
-  transition: all 1.5s ease-out;
-}
+// @mixin easeOut {
+//   transition: all 1.5s ease-out;
+// }
 
 .menu-btn {
   position: absolute;
@@ -70,7 +70,7 @@
     padding: 0;
     background: darken($primary-color, 5);
     list-style: none;
-    transform: translated3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
     @include easeOut;
 
     &.show {
@@ -91,9 +91,9 @@
     }
 
     .portrait {
-      width: 250px;
-      height: 250px;
-      background: url("../img/rp3.jpg");
+      width: 155px;
+      height: 155px;
+      background: url("../img/a2.jpg") no-repeat fixed center;
       border-radius: 50%;
       border: solid 3px $secondary-color;
     }
